@@ -1,1 +1,36 @@
-/*# sourceMappingURL=about.css.map */
+div.about {
+  height: calc(100vh - 50px);
+}
+div.about--content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.about--header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+}
+div.about--header img {
+  height: 400px;
+}
+div.about--header h2 {
+  height: 400px;
+  overflow: hidden;
+  font-size: 4rem;
+  align-self: flex-end;
+}
+div.about--header h2 .diff {
+  color: #FDB827;
+}
+div.about .content {
+  font-weight: 200;
+}
+div.about .content .head {
+  font-weight: 600;
+  margin: 10px 0;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,40 @@
+@import '../../../global/global';
+
+div.about {
+    height: calc(100vh - 50px);
+
+    &--content {
+        height: 100%;
+        @include d-flex(center, center, column);
+    }
+
+    &--header {
+        @include d-flex;
+        height: 500px;
+
+        img {
+            height: 400px;
+        }
+
+        h2 {
+            height: 400px;
+            overflow: hidden;
+            font-size: 4rem;
+            align-self: flex-end;
+
+            .diff {
+                color: #FDB827;
+            }
+        }
+    }
+
+    .content{
+        .head{
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        font-weight: 200;
+    }
+    
+}

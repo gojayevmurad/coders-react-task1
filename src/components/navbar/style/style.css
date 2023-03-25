@@ -34,4 +34,7 @@
 }
 .navbar ul li a:hover::after {
   opacity: 1;
+}
+.navbar ul li a.active::after {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

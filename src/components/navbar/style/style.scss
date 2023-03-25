@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
+
     ul {
         display: flex;
         align-items: center;
@@ -37,6 +38,10 @@
                     &::after {
                         opacity: 1;
                     }
+                }
+
+                &.active::after {
+                    opacity: 1;
                 }
             }
         }
