@@ -1,1 +1,70 @@
-/*# sourceMappingURL=home.css.map */
+.home {
+  height: calc(100vh - 50px);
+}
+.home--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.home--content .home--image img {
+  height: 400px;
+}
+.home--content .home--desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.home--content .home--desc h1 {
+  font-size: 4rem;
+  width: 600px;
+  font-weight: 900;
+  text-align: center;
+}
+.home--content .home--desc > p {
+  font-weight: 300;
+}
+.home--content .home--desc__actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.home--content .home--desc__actions button {
+  border: 1px solid transparent;
+  outline: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.home--content .home--desc__actions button.about {
+  background-color: #FDB827;
+  color: #000;
+}
+.home--content .home--desc__actions button.about:hover {
+  background-color: #000;
+  color: #FDB827;
+  border: 1px solid #FDB827;
+}
+.home--content .home--desc__actions button.portfolios {
+  background-color: #212121;
+}
+.home--content .home--desc__actions button.portfolios:hover {
+  background-color: #fff;
+  color: #212121;
+  border: #212121;
+}
+.home-deco {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.home-deco img {
+  height: 400px;
+}/*# sourceMappingURL=home.css.map */

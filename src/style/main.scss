@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-*{
+@import '../global/global';
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +11,37 @@
     color: #fff;
 }
 
-body{
+#root{
+    min-height: 100vh;
+}
+
+body {
     background-color: #000;
-    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    height: 100%;
+
+    @include desktop {
+        max-width: 1000px;
+    }
+
+    @include tablet {
+        max-width: 760px;
+    }
+
+    @include mobile {
+        max-width: 580px;
+    }
+
+    @include extra-small {
+        max-width: 400px;
+    }
+
+    @include extra-extra-small {
+        max-width: 100%;
+    }
 }

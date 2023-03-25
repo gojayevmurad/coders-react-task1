@@ -1,7 +1,10 @@
+@import '../../../global/global';
 
 .footer{
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
+    height: 50px;    
+    @include d-flex;
     ul{
         display: flex;
         width: 100%;
