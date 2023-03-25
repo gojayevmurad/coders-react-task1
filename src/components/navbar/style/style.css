@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(22, 22, 22, 0.8039215686);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar ul li a {
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+.navbar ul li a::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: rgb(254, 186, 60);
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+}
+.navbar ul li a:hover::after {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */

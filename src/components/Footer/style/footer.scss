@@ -1,0 +1,19 @@
+
+.footer{
+    width: 100%;
+    padding: 15px;
+    ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        color: #fff;
+        align-items: center;
+        font-weight: 300;
+        .footer--icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
