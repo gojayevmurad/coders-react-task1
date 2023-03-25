@@ -7,6 +7,11 @@
   align-items: center;
   height: 100%;
 }
+.home--content .home--image {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+}
 .home--content .home--image img {
   height: 400px;
 }
@@ -18,8 +23,8 @@
   text-align: center;
 }
 .home--content .home--desc h1 {
-  font-size: 4rem;
-  width: 600px;
+  font-size: 5rem;
+  width: 800px;
   font-weight: 900;
   text-align: center;
 }
