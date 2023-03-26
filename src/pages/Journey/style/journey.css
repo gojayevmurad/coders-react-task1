@@ -1,1 +1,67 @@
-/*# sourceMappingURL=journey.css.map */
+.journey {
+  min-height: calc(100vh - 50px);
+  padding-top: 50px;
+}
+.journey--content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 20px;
+}
+.journey--main__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.journey--main__head img {
+  height: 100%;
+}
+.journey--main__head h2 {
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+.journey--main__head p {
+  color: #555;
+}
+.journey--main__content {
+  letter-spacing: 1px;
+}
+.journey aside {
+  background-color: #191919;
+  height: 100%;
+  border: 1px solid #696969;
+  padding: 10px;
+}
+.journey aside .aside__header {
+  font-size: 2rem;
+}
+.journey aside select {
+  background-color: transparent;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  margin: 20px 0;
+  border: 1px solid #696969;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.journey aside select option {
+  background-color: #191919;
+}
+.journey aside ul li h3 {
+  font-size: 0.9rem;
+  color: #7c7c7c;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.journey aside ul li p {
+  background-color: #1a1611;
+  border: 1px solid #696969;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+
+.space {
+  height: 50px;
+}/*# sourceMappingURL=journey.css.map */
