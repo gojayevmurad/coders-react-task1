@@ -1,1 +1,28 @@
-/*# sourceMappingURL=blog.css.map */
+.blog {
+  min-height: calc(100vh - 50px);
+}
+.blog--content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 60px;
+}
+.blog--item {
+  border: 1px solid #696969;
+  background-color: #191919;
+  border-radius: 25px;
+}
+.blog--item__img {
+  width: 100%;
+}
+.blog--item__img img {
+  width: 100%;
+}
+.blog--item__text {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  flex-direction: column;
+}/*# sourceMappingURL=blog.css.map */

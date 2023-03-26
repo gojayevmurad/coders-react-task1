@@ -1,0 +1,33 @@
+.blog {
+    min-height: calc(100vh - 50px);
+
+    &--content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding-top: 60px;
+    }
+
+    &--item {
+        border: 1px solid #696969;
+        background-color: #191919;
+        border-radius: 25px;
+
+        &__img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+}
