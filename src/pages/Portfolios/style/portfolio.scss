@@ -1,0 +1,32 @@
+.portfolios{
+    height: calc(100vh - 50px);
+    &--content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;       
+        padding-top: 60px;
+        place-items: center;
+        height: 100%;
+    }
+
+    .portfolios--item{
+        border: 1px solid #696969;
+        border-radius: 20px;
+        display: flex;
+        gap: 10px;
+        background-color: #191919;
+        &__img{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            align-items: start;
+            flex-direction: column;
+            
+        }
+    }
+}

@@ -1,1 +1,30 @@
-/*# sourceMappingURL=portfolio.css.map */
+.portfolios {
+  height: calc(100vh - 50px);
+}
+.portfolios--content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 60px;
+  place-items: center;
+  height: 100%;
+}
+.portfolios .portfolios--item {
+  border: 1px solid #696969;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  background-color: #191919;
+}
+.portfolios .portfolios--item__img {
+  height: 100%;
+}
+.portfolios .portfolios--item__img img {
+  height: 100%;
+}
+.portfolios .portfolios--item__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+}/*# sourceMappingURL=portfolio.css.map */

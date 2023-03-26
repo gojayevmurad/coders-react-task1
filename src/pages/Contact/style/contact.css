@@ -1,0 +1,59 @@
+.contact {
+  height: calc(100vh - 100px);
+}
+.contact--content {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.contact--img {
+  height: 100%;
+}
+.contact--img img {
+  height: 100%;
+}
+.contact--text h2 {
+  font-size: 3.5rem;
+  width: 650px;
+  margin-bottom: 30px;
+}
+.contact--text .lorem {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+.contact--text p:not(.lorem) {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.contact--text__actions {
+  margin-top: 30px;
+}
+.contact--text__actions button {
+  border: 1px solid transparent;
+  outline: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.contact--text__actions button.about {
+  background-color: #FDB827;
+  color: #000;
+  margin-right: 20px;
+}
+.contact--text__actions button.about:hover {
+  background-color: #000;
+  color: #FDB827;
+  border: 1px solid #FDB827;
+}
+.contact--text__actions button.portfolios {
+  background-color: #212121;
+}
+.contact--text__actions button.portfolios:hover {
+  background-color: #fff;
+  color: #212121;
+  border: #212121;
+}/*# sourceMappingURL=contact.css.map */
