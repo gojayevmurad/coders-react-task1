@@ -15,6 +15,26 @@
   display: flex;
   align-items: center;
   gap: 30px;
+  transition: 0.5s ease-in-out;
+}
+@media only screen and (max-width: 575px) {
+  .navbar ul {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    left: -100%;
+    background-color: rgb(254, 186, 60);
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar ul li {
+    font-size: 2rem;
+  }
+  .navbar ul.active {
+    left: 0;
+  }
 }
 .navbar ul li a {
   color: #fff;
@@ -34,9 +54,82 @@
   opacity: 0;
   transition: 0.3s;
 }
+@media only screen and (max-width: 575px) {
+  .navbar ul li a::after {
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    left: -15px;
+  }
+}
 .navbar ul li a:hover::after {
   opacity: 1;
 }
 .navbar ul li a.active::after {
   opacity: 1;
+}
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 99;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+  display: none;
+}
+@media only screen and (max-width: 575px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger.active {
+  width: 0;
+}
+.hamburger.active::after {
+  bottom: 0;
+  rotate: 45deg;
+  animation: animcir 2s linear infinite;
+}
+.hamburger.active::before {
+  top: 0;
+  animation: animcir 2s linear infinite;
+  rotate: -45deg;
+}
+.hamburger::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  bottom: 10px;
+  left: 0;
+  transition: 0.4s;
+}
+.hamburger::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  top: 10px;
+  left: 0;
+  transition: 0.4s;
+}
+
+@keyframes animcir {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }/*# sourceMappingURL=style.css.map */
